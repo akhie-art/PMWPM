@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --warna1: #9900cc;
+  --warna2: #ff00ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+}
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: url(../Images/Bg.jpg) repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  header {
+    width: 100%;
+    height: 10%;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 0 60px 1px var(--warna2);
+  }
+  .navBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  .navBar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.7rem;
+  }
+  /* Home Page */
+  #home {
+    width: 100%;
+    height: 30%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+  .ktn-tulisan-home {
+    width: 50%;
+    height: 100%;
+  }
+  .ktn-tulisan-home h1 {
+    color: white;
+    margin-bottom: 5%;
+  }
+  .ktn-tulisan-home p {
+    font-size: 0.5rem;
+    color: white;
+    margin-bottom: 5%;
+  }
+  .tbl-daftar-home {
+    width: 100%;
+    height: 20%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+  }
+  .tbl-daftar-home button {
+    width: 35%;
+    height: 60%;
+    background-color: greenyellow;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  .tbl-daftar-home a {
+    text-decoration: none;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: black;
+  }
+  .ktn-gambar-home {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gambar-home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .gambar-home img {
+    height: 80%;
+    animation: 4s wobble ease infinite;
+  }
+  /* End Home Page */
+
+  /* Serive Page */
+  #service {
+    width: 100%;
+    height: 70%;
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+  }
+  .ktn-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+  .list-knt-service {
+    width: 160px;
+    height: 250px;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 5px;
+    padding: 15px;
+    border: 1.5px solid #ff00ff;
+  }
+  .gambar-list-service {
+    width: 100%;
+    height: 35%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gambar-list-service img {
+    width: 40%;
+  }
+  .judul-list-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    /* background: brown; */
+    font-size: 0.6rem;
+  }
+  .judul-list-service h1 {
+    color: white;
+  }
+  .narasi-list-service {
+    width: 100%;
+    height: 30%;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    overflow: scroll;
+    padding: 5%;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .narasi-list-service p {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 0.5rem;
+  }
+  .tbl-service {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    margin-top: 7%;
+  }
+  .tbl-service button {
+    background-color: greenyellow;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 60%;
+    border-radius: 3px;
+  }
+  .tbl-service a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 0.6rem;
+  }
+
+  /* End Serive Page */
+
+  /* Contact */
+  #contact{
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact a{
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+  }
+  #contact a:hover{
+    text-decoration: underline;
+
+  }
+  /* End Contact */
+}
+/* Animasi */
+@keyframes wobble {
+  0% {
+    transform: translateX(0%);
+  }
+  15% {
+    transform: translateX(-5%) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(5%) rotate(3deg);
+  }
+  45% {
+    transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
