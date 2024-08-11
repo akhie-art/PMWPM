@@ -208,7 +208,7 @@
   /* End Serive Page */
 
   /* Contact */
-  #contact{
+  #contact {
     width: 100%;
     height: 50%;
     /* background-color: red; */
@@ -216,16 +216,31 @@
     justify-content: center;
     align-items: center;
   }
-  #contact a{
+  #contact a {
     text-decoration: none;
     color: white;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  #contact a:hover{
+  #contact a:hover {
     text-decoration: underline;
-
   }
   /* End Contact */
+
+  /* Serifikat dan Materi */
+  .bungkus-tulisan-materi,
+  .bungkus-tulisan-sertifikat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .bungkus-tulisan-materi h1,
+  .bungkus-tulisan-sertifikat h1 {
+    color: white;
+    text-align: center;
+  }
+  /* End Serifikat dan Materi */
 }
 /* Animasi */
 @keyframes wobble {
